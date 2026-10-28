@@ -1,0 +1,63 @@
+{
+  "selected_model": "mlp_128_64",
+  "seed": 42,
+  "epochs": 10,
+  "learning_rate": 0.001,
+  "data_sizes": {
+    "train": 55000,
+    "validation": 5000,
+    "test": 10000
+  },
+  "experiments": [
+    {
+      "model": "mlp_128_64",
+      "hidden_layers": [
+        128,
+        64
+      ],
+      "epochs": 10,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "optimizer": "Adam",
+      "final_train_loss": 0.022397939107634806,
+      "final_validation_loss": 0.08527818781137467,
+      "final_train_accuracy": 0.9935272727272727,
+      "final_validation_accuracy": 0.9768,
+      "training_seconds": 116.43,
+      "test_loss": 0.07646330400167499,
+      "test_accuracy": 0.9768
+    },
+    {
+      "model": "mlp_256_128",
+      "hidden_layers": [
+        256,
+        128
+      ],
+      "epochs": 10,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "optimizer": "Adam",
+      "final_train_loss": 0.012504909151250666,
+      "final_validation_loss": 0.08459988726507872,
+      "final_train_accuracy": 0.9963636363636363,
+      "final_validation_accuracy": 0.9748,
+      "training_seconds": 114.16
+    },
+    {
+      "model": "mlp_512_256",
+      "hidden_layers": [
+        512,
+        256
+      ],
+      "epochs": 10,
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "optimizer": "Adam",
+      "final_train_loss": 0.016390165152197534,
+      "final_validation_loss": 0.09684032055847347,
+      "final_train_accuracy": 0.9945454545454545,
+      "final_validation_accuracy": 0.9744,
+      "training_seconds": 119.32
+    }
+  ]
+}
